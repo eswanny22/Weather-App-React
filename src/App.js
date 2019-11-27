@@ -52,7 +52,7 @@ class App extends React.Component {
         return ( // can only return one parent element (one div etc. can have anything within it)
             <div>
                 <div className="wrapper">
-                    <div className="main">
+                    
                         <div className="container">
                             <div className="row">
                                 <div className="col-xs-5 title-container">
@@ -71,7 +71,7 @@ class App extends React.Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            
         );
     }
 };
