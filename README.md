@@ -1,3 +1,6 @@
+## Weather App in React
+This weather app uses the API from https://openweathermap.org/ to pull current weather data on the user-entered location based on city and country. This app was created using React, HTML, and CSS.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Using the following instructions you can run the code locally.
 
 ## Available Scripts
