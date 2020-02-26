@@ -35,19 +35,8 @@ class App extends React.Component {
         humidity: data.main.humidity,
         description: data.weather[0].description,
         error: ""
-      });
-    } else {
-      this.setState({
-        temperature: undefined,
-        city: undefined,
-        country: undefined,
-        humidity: undefined,
-        description: undefined,
-        error: "Please enter a valid City and Country."
-      });
-    }
-  };
-  render() {
+      })
+      render() {
     // returns jsx... react and babel work behind the scenes to convert this
     return (
       // can only return one parent element (one div etc. can have anything within it)
@@ -74,7 +63,17 @@ class App extends React.Component {
         </div>
       </div>
     );
-  }
+    } else {
+      this.setState({
+        temperature: undefined,
+        city: undefined,
+        country: undefined,
+        humidity: undefined,
+        description: undefined,
+        error: "Please enter a valid City and Country."
+      });
+    }
+  };
 }
 
 export default App; // tells the file to make the component available for other files to import (for index.js in this case)
