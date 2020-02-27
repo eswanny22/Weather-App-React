@@ -5,7 +5,9 @@ import Weather from "./components/Weather"; // Import Weather.js
 import { tsUndefinedKeyword } from "@babel/types";
 
 const API_KEY = "38358b62a57ba5c4cda581381e62de93"; // API key from opensourceweather 
-
+const stoperror = () => {
+    return true;
+}
 // Creating an instance of App extending React.Component from the node_modules
 class App extends React.Component {
     // Object that contains key value pairs
